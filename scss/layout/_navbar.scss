@@ -1,0 +1,129 @@
+.header {
+  background-color: $bg-color;
+  height: 90px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  display: flex
+}
+
+.navbar-brand {
+  @include styleText(34px, 600, $primary-color);
+}
+
+.navbar-brand:hover {
+  color: $primary-color;
+}
+
+.navbar-collapse {
+  .navbar-nav {
+    .nav-item {
+      padding: 0 12px;
+      .nav-link {
+        @include styleText(19px, 400, $heading-color);
+        padding: 0;
+        transition: all 0.5s ease;
+        position: relative;
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  .navbar-nav {
+    .nav-item {
+      .nav-link:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  .navbar-nav {
+    .nav-item {
+      .nav-link:before {
+        position: absolute;
+        content: "";
+        background: $primary-color;
+        width: 0;
+        height: 1px;
+        bottom: 0px;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  .navbar-nav {
+    .nav-item {
+      .nav-link:hover.nav-link:before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  .navbar-nav {
+    .active {
+      .nav-link {
+        color: $primary-color;
+      }
+    }
+  }
+}
+.dropdown {
+  .dropdown-menu {
+    transform: translateX(-50px);
+    min-width: 13rem;
+    margin-top: 1rem;
+    .dropdown-item {
+      @include styleText(19px, 400, $heading-color);
+      padding: 0 24px 14px;
+      position: relative;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.dropdown-menu:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: $dropdown-color;
+  border: 1px solid $border-color;
+  display: block;
+  border-right: none;
+  border-bottom: none;
+  transform: translateX(-50%) rotateZ(45deg);
+  position: absolute;
+  top: -7px;
+  left: 49%;
+  z-index: 1001;
+}
+
+.dropdown {
+  .dropdown-menu {
+    .dropdown-item::before {
+      position: absolute;
+      content: "";
+      background: $primary-color;
+      width: 0;
+      height: 1px;
+      bottom: 13px;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.dropdown-item:hover.dropdown-item::before {
+  width: 50%;
+}
+.dropdown {
+  .dropdown-menu {
+    .dropdown-item:hover {
+      color: $primary-color;
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.service__img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.service__info {
+  padding-top: 5rem;
+  .txt__text {
+    font-size: 1rem;
+    margin: 15px 0 35px;
+  }
+}
+
+.service__list {
+  list-style: none;
+  li {
+    span {
+      color: $primary-color;
+      margin-right: 12px;
+      background-color: $bg-light;
+      border-radius: 50%;
+      padding: 8px;
+    }
+    line-height: 26px;
+    margin: 15px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $heading-color;
+    display: block;
+  }
+}

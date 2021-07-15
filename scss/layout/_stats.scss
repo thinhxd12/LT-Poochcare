@@ -1,0 +1,15 @@
+.stat__item {
+  text-align: center;
+  span {
+    @include styleText(50px, 600, $color-white);
+  }
+  p {
+    @include styleText(20px, 400, $color-white);
+    opacity: 0.8;
+    text-transform: capitalize;
+  }
+}
+
+.stats {
+  background-color: $primary-color;
+}

@@ -1,0 +1,98 @@
+.card__item {
+  padding: 40px 30px;
+  transition: all 0.5s ease 0s;
+  border-radius: $border-radius;
+  background-color: $bg-color;
+  position: relative;
+  margin-bottom: 30px;
+  .card__icon {
+    font-size: 30px;
+    i {
+      color: $primary-color;
+    }
+  }
+  .card__title {
+    @include styleText(24px, 600, $heading-color);
+    margin: 25px 0 15px;
+    display: inline-block;
+  }
+  .card__title:hover {
+    text-decoration: none;
+    color: $primary-color;
+  }
+  .card__text {
+    @include styleText(19.2px, 400, $font-color);
+    line-height: 28px;
+  }
+  .txt__readmore {
+    margin-top: 20px;
+  }
+}
+
+.card__item:hover {
+  background-color: $bg-light;
+}
+
+.pricing__card__item {
+  padding: 56px 40px;
+  background-color: $bg-color;
+  border-radius: 6px;
+  width: calc(100% / 3);
+  h6 {
+    @include styleText(25px, 600, $heading-color);
+    text-transform: capitalize;
+  }
+  .pricing__card__price {
+    font-size: 40px;
+    font-weight: 600;
+    color: $primary-color;
+    padding: 15px 0 20px;
+    label {
+      vertical-align: text-top;
+      color: $primary-color;
+      font-weight: 600;
+      font-size: 25px;
+    }
+    span {
+      @include styleText(1rem, 400, #999);
+    }
+  }
+  p {
+    @include styleText(18px, 400, $font-color);
+    padding: 0;
+    margin: 14px 0 14px;
+  }
+  .btnBuyNow {
+    margin-top: 1.5rem;
+  }
+}
+
+.pricing__card__item__center {
+  @extend .pricing__card__item;
+  padding: 0 0 56px 0;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0 10px 30px 0 rgba(17, 17, 17, 0.09);
+  .pricing__card__price {
+    color: $color-white;
+    margin-bottom: 40px;
+    h5 {
+      @include styleText(15px, 700, $primary-color);
+      text-transform: uppercase;
+      padding: 8px 20px;
+      border-radius: $border-radius;
+      background-color: $color-white;
+      display: inline-block;
+      margin: 40px 0;
+    }
+    background-color: $primary-color;
+    h6,
+    label,
+    span {
+      color: $color-white;
+    }
+    label {
+      padding-bottom: 35px;
+    }
+  }
+}

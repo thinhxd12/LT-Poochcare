@@ -1,0 +1,56 @@
+.carousel {
+  .carousel__item {
+    position: relative;
+    height: 600px;
+    .carousel__info {
+      position: inherit;
+      z-index: 99;
+      padding: 0;
+      padding-top: 150px;
+      h5 {
+        @include styleText(66px, 700, $color-white);
+        max-width: 50%;
+      }
+      p {
+        @include styleText(19px, 400, $color-white);
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+.carousel__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  background-color: #0c0c0c;
+  opacity: 0.6;
+}
+
+.owl-theme {
+  .owl-dots {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-white;
+  }
+}
+
+.owl-theme {
+  .owl-dots {
+    .owl-dot.active,
+    .owl-dot:hover {
+      span {
+        background: $primary-color;
+        color: $primary-color;
+        width: 25px;
+        border: none;
+      }
+    }
+  }
+}

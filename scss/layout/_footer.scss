@@ -1,0 +1,21 @@
+.footer {
+  background-color: #111;
+  p,
+  strong,a {
+    color: $font-color;
+    margin: 6px 0;
+  }
+  a:hover{
+      color: $color-white;
+  }
+}
+
+.footer__foot{
+    border-top: 1px solid $font-color;
+    a{
+        color: $secondary-color;
+    }
+    a:hover{
+        color: $secondary-color;
+    }
+}

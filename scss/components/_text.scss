@@ -1,0 +1,30 @@
+.txt_subtittle {
+    @include styleText(18px,400,$secondary-color);
+    text-transform: uppercase;
+}
+
+.txt__header {
+    @include styleText(40px,600,$heading-color);
+    text-transform: capitalize;
+}
+
+.txt__text {
+    @include styleText(19.2px,400,$font-color);
+}
+
+.txt__readmore {
+    @include styleText(17px,600,$heading-color);
+    border-bottom: 2px solid $primary-color;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.txt__readmore:hover {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.txt__footer{
+    @include styleText(20px,600,$color-white);
+    margin-bottom: 25px;
+}

@@ -1,0 +1,14 @@
+.subscribe {
+  max-width: 700px;
+  margin: 0 auto;
+  .subscribe__content {
+    .txt__text {
+      margin: 20px 0 40px;
+    }
+    .subscribe__form{
+        height: 51px;
+        border-radius: $border-radius;
+        margin-right: 20px;
+    }
+  }
+}

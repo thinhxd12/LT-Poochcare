@@ -1,0 +1,36 @@
+.btnReadMore {
+  @include styleButton(
+    12px,
+    35px,
+    18px,
+    400,
+    $color-white,
+    $primary-color,
+    $border-radius
+  );
+  border: none;
+}
+
+.btnContact {
+  @extend .btnReadMore;
+  background-color: transparent;
+  color: $color-white;
+  border: 2px solid $color-white;
+  transition: 0.3s ease-in;
+}
+
+.btnContact:hover {
+  background-color: $color-white;
+  color: $primary-color;
+}
+
+.btnBuyNow {
+  @extend .btnReadMore;
+  background-color: $primary-color;
+  color: $color-white;
+  transition: 0.3s ease-in;
+}
+
+.btnBuyNow:hover {
+  background-color: #116E32;
+}
